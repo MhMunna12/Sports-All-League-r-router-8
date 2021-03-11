@@ -1,0 +1,12 @@
+
+.banner{
+    background-image: url("../../Image/banner.jpg");
+    background-size:   100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding:100px
+
+}
+
+
