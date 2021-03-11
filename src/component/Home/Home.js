@@ -6,6 +6,7 @@ import League from '../League/League';
 
 const Home = () => {
     const [leagues,setLeagues] = useState([]);
+    
 
     useEffect(()=>{
         const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
@@ -15,12 +16,13 @@ const Home = () => {
     },[])
     
     return (
-        <div className="container mt-1 mr-2">
+        <div className="container mt-1 mr-2 " style={{backgroundColor:'rgb(35, 35, 136)'}}>
         <Header/>
             <div className="row">
                 {
                     leagues.slice(0,30).map(league => <League league={league} key={league.idLeague}/>)
                 }
+
             </div>
         </div>
     );
